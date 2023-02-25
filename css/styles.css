@@ -363,25 +363,23 @@
 
 .galery__item{
   display: none;
+  background-position: top right;
+  background-repeat: no-repeat;
+  }
+
+  .galery__item--1{
+  background-image: url("../img/all/nerds-index-slide-1-min.png");
+  }
+ .galery__item--2{
+  background-image: url("../img/all/nerds-index-slide-2-min.png");
+  }
+  .galery__item--3{
+  background-image: url("../img/all/nerds-index-slide-3-min.png");
   }
 
 .galery__item--current {
-  display:flex;
-  flex-basis: 430px;
-  flex-grow: 1;
-}
-
-.galery__descr{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.galery__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
+  display:block;
+  padding: 80px 0;
 }
 
 .galery__title {
@@ -390,6 +388,7 @@
 
  .galery__text{
   margin-top: 25px;
+  line-height: 24px;
  }
 
 .galery__button {
@@ -397,31 +396,35 @@
   margin-top:40px;
  }
 
-.galery__options {
+.galery__controls {
   position: absolute;
   bottom: 95px;
   left: 0;
-  width: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  z-index:2;
+}
+.controls{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-between;
+  width: 88px;
 }
-.galery__radio-buttons{
-  width:88px;
-  border: none;
-  display: flex;
-  justify-content: space-between;
-}
-.galery__radio-buttons > .radio__label::before{
-    opacity: 1;
-    width:18px;
-    height:18px;
-    background: url(/img/icons/galery_radio.svg) 0 0 no-repeat;
+.button-control{
+  width:18px;
+  height:18px;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--basic-white);
+  color: var(--basic-white);
 }
 
-.galery__radio-buttons > .radio__input:checked + .radio__label::before {
-    background: url(/img/icons/galery_radio_checked.svg) 0 0 no-repeat;
+.galery__controls button.current{
+  box-shadow: inset 0 0 0 5px var( --basic-white),
+  inset 0 0 0 7px var( --basic-light-gray);
 }
+
 /*MAIN PAGE */
 
 .main-page{

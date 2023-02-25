@@ -70,75 +70,59 @@
         <ul class="list galery__list">
 
           <!-- Slide-1 -->
-          <li class="galery__item galery__item--current">
-            <div class="galery__descr">
-              <h3 class="title galery__title">
-                Долго, дорого,<br />скрупулезно.
-              </h3>
-              <p class="text galery__text">
-                Математически выверенный дизайн <br />для вашего сайта или
-                мобильного приложения.
-              </p>
-              <a class="button galery__button button--theme" href="blank.html">
-                <span class="button__text">Узнать больше</span>
-              </a>
-            </div>
-            <img class="img galery__img" src="img/all/nerds-index-slide-1-min.png" width="760" height="431"
-              alt="Три смартфона" />
+          <li class="galery__item galery__item--1 ">
+            <h3 class="title galery__title">
+              Долго, дорого,<br />скрупулезно.
+            </h3>
+            <p class="text galery__text">
+              Математически выверенный дизайн <br />для вашего сайта или
+              мобильного приложения.
+            </p>
+            <a class="button galery__button button--theme " href="blank.html">
+              <span class="button__text">Узнать больше</span>
+            </a>
           </li>
 
           <!-- Slide-2 -->
-          <li class="galery__item">
-            <div class="galery__descr">
-              <h3 class="title galery__title">
-                Любим математику<br />
-                как никто другой.
-              </h3>
-              <p class="text">
-                Никакого креатива, только математические формулы<br />
-                для расчета идеальных пропорций.
-              </p>
-              <a class="button galery__button button--theme" href="blank.html">
-                <span class="button__text">Узнать больше</span>
-              </a>
-            </div>
-            <img class="img galery__img" src="img/all/nerds-index-slide-2-min.png" width="760" height="431"
-              alt="Два монитора" />
+          <li class="galery__item galery__item--2 galery__item--current">
+            <h3 class="title galery__title">
+              Любим математику<br />
+              как никто другой.
+            </h3>
+            <p class="text galery__text">
+              Никакого креатива, только математические формулы<br />
+              для расчета идеальных пропорций.
+            </p>
+            <a class="button galery__button button--theme" href="blank.html">
+              <span class="button__text">Узнать больше</span>
+            </a>
           </li>
 
           <!-- Slide-3 -->
-          <li class="galery__item">
-            <div class="galery__descr">
-              <h3 class="title galery__title">
-                Только ночь,<br />
-                только хардкор
-              </h3>
-              <p class="text">
-                Работать днем, как все? Мы против этого.<br />Ближе к
-                полуночи работа только
-                начинается.
-              </p>
-              <a class="button galery__button button--theme" href="blank.html">
-                <span class="button__text">Узнать больше</span>
-              </a>
-            </div>
-            <img class="img galery__img" src="img/all/nerds-index-slide-3-min.png" width="760" height="431"
-              alt="Планшет и смартфон" />
+          <li class="galery__item galery__item--3">
+            <h3 class="title galery__title">
+              Только ночь,<br />
+              только хардкор
+            </h3>
+            <p class="text galery__text">
+              Работать днем, как все? Мы против этого.<br />Ближе к
+              полуночи работа только
+              начинается.
+            </p>
+            <a class="button galery__button button--theme" href="blank.html">
+              <span class="button__text">Узнать больше</span>
+            </a>
           </li>
         </ul>
 
-        <!-- Radio-buttons -->
-        <div class="galery__options">
-          <fieldset class="galery__radio-buttons radio-buttons">
-            <legend class="visually-hidden">Кнопки выбора слайда</legend>
-            <input class="radio__input visually-hidden" id="radio-1" type="radio" checked value="1"
-              name="slide-number" />
-            <label class="radio__label" for="radio-1"><span class="visually-hidden">Слайд номер один</span></label>
-            <input class="radio__input visually-hidden" id="radio-2" type="radio" value="2" name="slide-number" />
-            <label class="radio__label" for="radio-2"><span class="visually-hidden">Слайд номер два</span></label>
-            <input class="radio__input visually-hidden" id="radio-3" type="radio" value="3" name="slide-number" />
-            <label class="radio__label" for="radio-3"><span class="visually-hidden">Слайд номер три</span></label>
-          </fieldset>
+        <!-- Galery controls -->
+        <div class="galery__controls">
+          <h2 class="visually-hidden">Кнопки выбора слайда</h2>
+          <div class="controls">
+            <button type="button" class="button-control current" id="control-1" area-label="Первый слайд"></button>
+            <button type="button" class="button-control" id="control-2" area-label="Второй слайд"></button>
+            <button type="button" class="button-control" id="control-3" area-label="Третий слайд"></button>
+          </div>
         </div>
       </section>
     </div>
