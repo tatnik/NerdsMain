@@ -12,11 +12,10 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation>">
+    <nav class="main-navigation container">
       <a class="main-header-logo"><img src="img/logo/nerds-logo.svg" width="160" height="65"
           alt="Логотип компании Нёрдс"></a>
       <ul class="site-navigation">
-        <!-- TODO: Убрать спаны и поменять классы. Сделать доп. класс для ссылок -->
         <li class="nav-item">
           <a class="nav-option" href="#">Студия</a>
         </li>
@@ -43,38 +42,32 @@
           Корзина </a>
       </div>
     </nav>
-  </header>
 
-  <main class="page-main">
+    <section class="main-slider container">
 
-    <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-
-    <section class="main-slider">
       <h2 class="visually-hidden">Как мы работаем</h2>
       <ul class="slider-list">
-        <li class="slider-item">
-          <div>
+        <li class="slider-item item-1">
             <h3 class="title">Долго, дорого,<br>скрупулезно.</h3>
             <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-            <a class="button primary-button" href="blank.html"><span>Узнать больше</span></a>
-          </div>
-          <img src="img/all/nerds-index-slide-1-min.png" width="760" height="431" alt="Три смартфона">
+            <a class="button button-primary" href="blank.html"><span>Узнать больше</span></a>
+          <!-- <img src="img/all/nerds-index-slide-1-min.png" width="760" height="431" alt="Три смартфона"> -->
         </li>
-        <li class="slider-item">
-          <div>
+        <li class="slider-item item-2">
+
             <h3 class="title">Любим математику<br> как никто другой.</h3>
             <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-            <a class="button primary-button" href="blank.html"><span>Узнать больше</span></a>
-          </div>
-          <img src="img/all/nerds-index-slide-2-min.png" width="760" height="431" alt="Два монитора">
+            <a class="button button-primary" href="blank.html"><span>Узнать больше</span></a>
+
+          <!--<img src="img/all/nerds-index-slide-2-min.png" width="760" height="431" alt="Два монитора"> -->
         </li>
-        <li class="slider-item">
-          <div>
+        <li class="slider-item item-3">
+
             <h3 class="title">Только ночь,<br> только хардкор</h3>
             <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-            <a class="button primary-button" href="blank.html"><span>Узнать больше</span></a>
-          </div>
-          <img src="img/all/nerds-index-slide-3-min.png" width="760" height="431" alt="Планшет и смартфон">
+            <a class="button button-primary" href="blank.html"><span>Узнать больше</span></a>
+
+          <!-- <img src="img/all/nerds-index-slide-3-min.png" width="760" height="431" alt="Планшет и смартфон"> -->
         </li>
       </ul>
 
@@ -100,42 +93,43 @@
       </ol>
     </section>
 
+  </header>
+
+  <main class="page-main container">
+
+    <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+
+
     <section class="services">
 
       <h2 class="visually-hidden">Услуги</h2>
 
       <ul class="services-list">
-        <li class="sercives-item">
+        <li class="services-item">
           <h3 class="title">Веб-сайты</h3>
-          <figure>
             <img src="img/all/illustration-1-min.png" width="300" height="146" alt="веб-сайты">
-            <figcaption>
-              Мир никогда не будет прежним после того как увидит ваш сайт!
-            </figcaption>
-          </figure>
-          <a class="button primary-button" href="blank.html"><span>Заказать</span></a>
+            <p>
+              Мир никогда не будет прежним<br> после того как увидит ваш сайт!
+            </p>
+          <a class="button button-primary" href="blank.html"><span>Заказать</span></a>
         </li>
 
-        <li class="sercives-item">
+        <li class="services-item">
           <h3 class="title">Приложения</h3>
-          <figure>
             <img src="img/all/illustration-2-min.png" width="300" height="146" alt="приложения">
-            <figcaption>
-              Покорите топ-10 приложений в AppStore и Google Play
-            </figcaption>
-          </figure>
-          <a class="button primary-button button-app" href="blank.html"><span>Заказать</span></a>
+            <p>
+              Покорите топ-10 приложений<br> в AppStore и Google Play
+            </p>
+          <a class="button button-primary button-app" href="blank.html"><span>Заказать</span></a>
         </li>
 
-        <li class="sercives-item">
+        <li class="services-item">
           <h3 class="title">Презентации</h3>
-          <figure>
             <img src="img/all/illustration-3-min.png" width="300" height="146" alt="презентации">
-            <figcaption>
-              Вы даже не подозреваете, насколько вы изумительны!
-            </figcaption>
-          </figure>
-          <a class="button primary-button button-ppt" href="blank.html"><span>Заказать</span></a>
+            <p>
+              Вы даже не подозреваете,<br> насколько вы изумительны!
+            </p>
+          <a class="button button-primary button-ppt" href="blank.html"><span>Заказать</span></a>
         </li>
       </ul>
 
@@ -157,7 +151,7 @@
         </ul>
       </div>
 
-      <div class="about-us-parameters">
+      <div class="about-us-statistic">
         <img src="img/logo/nerds-illustration-min.png" width="360" height="208" alt="Логотип компании Нёрдс">
         <p class="list-caption">с 2004 года Любим точность во всем:</p>
         <dl class="parameters-list">
@@ -217,7 +211,7 @@
           <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </address>
         <!-- Это кнопка )) -->
-        <a class="button primary-button" href="blank.html">Напишите нам</a>
+        <a class="button button-primary" href="blank.html">Напишите нам</a>
       </div>
 
     </section>
@@ -226,7 +220,7 @@
       <h2 class="visually-hidden">Соцсети</h2>
       <ul class="social-list">
         <li class="social-item">
-          <a class="button primary-button social-button" href="">
+          <a class="button button-primary social-button" href="">
             <span class="visually-hidden">Вконтакте</span>
             <svg class="social-icon" width="27" height="15" viewBox="0 0 27 15" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -237,7 +231,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="button primary-button social-button" href="">
+          <a class="button button-primary social-button" href="">
             <span class="visually-hidden">Facebook</span>
             <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
@@ -245,7 +239,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="button primary-button social-button" href="">
+          <a class="button button-primary social-button" href="">
             <span class="visually-hidden">Инстаграм</span>
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -289,7 +283,7 @@
       <label class="label">Текст письма:
         <textarea class="input input-multyline" name="text" placeholder="В произвольной форме"></textarea>
       </label>
-      <button class="button primary-button" type="submit">Отправить</button>
+      <button class="button button-primary" type="submit">Отправить</button>
     </form>
   </section>
 
