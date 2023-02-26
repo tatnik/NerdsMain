@@ -438,7 +438,8 @@
   display:grid;
   column-gap: 40px;
   grid-template-columns: repeat(3,1fr);
-  margin-top: 80px;
+  padding: 80px 0;
+  border-bottom: 2px solid var(--basic-light);
 }
 
 .services__item {
@@ -478,7 +479,6 @@
 /* ABOUT-US */
 .about{
   display: grid;
-  border-top: 2px solid var(--basic-light);
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: auto auto;
   column-gap:40px;
@@ -486,17 +486,20 @@
   grid-template-areas:
   "title title img"
   "fig1 fig1 fig2";
-  margin-top:80px;
-  padding-top:40px;
+  margin-top: 40px;
+  padding: 35px 0 80px 0;
+  border-bottom: 2px solid var(--basic-light);
+  background-image: url("../img/logo/nerds-illustration-min.png");
+  background-position: top right;
+  background-repeat:no-repeat;
 }
 .about__description {
   grid-area: title;
 }
-.about__lead {
+.about__title {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  margin-top:35px;
 }
 .about__text{
   margin-top:30px;
@@ -522,10 +525,6 @@
   left: -35px;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.about__img {
-  grid-area:img;
 }
 
 .about__stat {
@@ -554,22 +553,20 @@
 
 /* CLIENTS */
 .clients{
-  margin-top:75px;
-  border-top: 2px solid var(--basic-light);
   border-bottom: 2px solid var(--basic-light);
 }
-
 
 .clients__list{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr;
 grid-gap: 40px;
+justify-content: center;
+align-items: center;
 }
 
 .clients__item {
   position: relative;
-  text-align: center;
 }
 
 .clients__item::after {
