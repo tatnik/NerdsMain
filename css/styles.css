@@ -347,15 +347,15 @@
 /* HEADER */
 
 .header__nav{
-  margin-top: 50px;
+ padding-top: 50px;
 }
 
 .header__site-nav {
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .header__user-nav {
-   margin-top: 25px;
+   padding-top: 25px;
    max-width: 160 px;
 }
 
@@ -438,11 +438,6 @@
 }
 
 /*MAIN PAGE */
-
-.main-page{
-  display:flex;
-  flex-direction:column;
-}
 
 /* SERVICES */
 
@@ -572,7 +567,7 @@
 
 .clients__list{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: repeat(4, 1fr);
 grid-template-rows: 1fr;
 grid-gap: 40px;
 justify-content: center;
@@ -638,7 +633,6 @@ align-items: center;
 }
 .contacts__card{
   background: var( --basic-white );
-  width: 210px;
   padding: 50px;
   position: absolute;
   bottom: 50px;
@@ -667,7 +661,7 @@ align-items: center;
 }
 
 .contacts__button {
-  width: 100%;
+  width: 220px;
   margin-top: 35px;
 }
 
@@ -675,11 +669,12 @@ align-items: center;
 
 .social{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
   padding-top:75px;
   padding-bottom:65px;
 }
+
 .social__list {
   display:flex;
   grid-column: 1/2;
