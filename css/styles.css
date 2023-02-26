@@ -325,8 +325,10 @@
   background-image: url("../img/icons/basket.svg");
 }
 .user-nav__icon::before path{
- fill: var( --basic-white);
+ fill: var( --basic-light-gray);
 }
+
+
 /* LOGO */
 
 .logo__link {
@@ -362,6 +364,7 @@
 /* GALERY */
 
 .galery {
+  background-color: var(--basic-light);
   position: relative;
 }
 
