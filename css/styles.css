@@ -552,6 +552,7 @@
 }
 
 /* CLIENTS */
+
 .clients{
   border-bottom: 2px solid var(--basic-light);
 }
@@ -583,6 +584,11 @@ align-items: center;
 .clients__item:last-child::after{
   display: none;
 }
+
+.clients__img{
+  width: 100%;
+}
+
 .clients__link{
   opacity: 0.2;
 }
