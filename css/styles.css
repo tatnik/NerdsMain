@@ -611,12 +611,13 @@ align-items: center;
 
 .contacts {
   background-color: var(--basic-light);
-   position:relative;
+  position: relative;
 }
  .contacts__map{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+  background-image: url("../img/all/map&marker-min.png");
+  background-repeat: no-repeat;
+  min-height: 415px;
+  padding: 0 120px;
 }
 
 .contacts__img{
@@ -624,8 +625,8 @@ align-items: center;
 }
 .contacts__card{
   background: var( --basic-white );
-  width:210px;
-  padding:50px;
+  width: 210px;
+  padding: 50px;
   position: absolute;
   bottom: 50px;
 }
