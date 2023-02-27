@@ -109,11 +109,6 @@
   padding-right: 20px;
 }
 
-.center{
-  margin-left:auto;
-  margin-right:auto;
-}
-
 .title {
   font-weight: 700;
   font-size: 55px;
@@ -304,30 +299,34 @@
   text-decoration-color: var(--special-neutral);
 }
 
-.site-nav {
+.site-nav, .user-nav {
   display: flex;
   flex-wrap: wrap;
   row-gap: 15px;
   column-gap: 45px;
+  align-items: flex-start;
 }
+
+.site-nav{
+  justify-content:center;
+}
+
 .user-nav{
-  text-align: right;
-  }
-  .user-nav__icon{
+  justify-content: flex-end;
+ }
+
+ .user-nav__icon{
   display:flex;
   column-gap: 25px;
   align-items: center;
  }
+
 .user-nav__icon::before{
   content: "";
   width: 15px;
   height: 15px;
   background-image: url("../img/icons/basket.svg");
 }
-.user-nav__icon::before path{
- fill: var( --basic-light-gray);
-}
-
 
 /* LOGO */
 
@@ -342,6 +341,10 @@
 .logo__link:active {
   opacity: 0.3;
 }
+.logo__img{
+  width:160px;
+  height:65px;
+}
 
 
 /* HEADER */
@@ -351,12 +354,12 @@
 }
 
 .header__site-nav {
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .header__user-nav {
-   padding-top: 25px;
-   max-width: 160 px;
+   padding-top: 30px;
+   max-width: 160px;
 }
 
 
@@ -391,7 +394,7 @@
 
 .galery__item--current {
   display:block;
-  padding: 80px 0;
+  padding: 75px 0;
 }
 
 .galery__title {
@@ -476,7 +479,7 @@
   margin-top: 25px;
 }
 .services__text{
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .services__button {
   width: 160px;
@@ -490,12 +493,12 @@
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: auto auto;
   column-gap:40px;
-  row-gap:35px;
+  row-gap:40px;
   grid-template-areas:
   "title title img"
   "fig1 fig1 fig2";
   margin-top: 40px;
-  padding: 35px 0 80px 0;
+  padding: 35px 0 70px 0;
   border-bottom: 2px solid var(--basic-light);
   background-image: url("../img/logo/nerds-illustration-min.png");
   background-position: top right;
@@ -511,6 +514,7 @@
 }
 .about__text{
   margin-top:30px;
+  line-height:26px;
 }
 
 .about__skills{
@@ -522,7 +526,7 @@
 }
 .about__skillsitem{
   position:relative;
-  margin-top:25px;
+  margin-top:24px;
 }
 .about__skillsitem::before {
   content: "";
@@ -530,7 +534,7 @@
   width: 25px;
   height: 2px;
   background-color: var( --special-light );
-  left: -35px;
+  left: -40px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -572,6 +576,7 @@ grid-template-rows: 1fr;
 grid-gap: 40px;
 justify-content: center;
 align-items: center;
+height: 180px;
 }
 
 .clients__item {
@@ -625,7 +630,7 @@ align-items: center;
   background-image: url("../img/all/map&marker-min.png");
   background-repeat: no-repeat;
   min-height: 415px;
-  padding: 0 120px;
+  padding: 0 140px;
 }
 
 .contacts__img{
@@ -633,14 +638,13 @@ align-items: center;
 }
 .contacts__card{
   background: var( --basic-white );
-  padding: 50px;
+  padding: 45px 50px 50px 50px;
   position: absolute;
   bottom: 50px;
 }
 
 .contacts__title {
   font-size: 18px;
-  line-height: 30px;
   font-style: normal;
 
 }
@@ -648,7 +652,7 @@ align-items: center;
   font-style: normal;
   line-height: 18px;
   color: var(--color-map);
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .phone__text {
@@ -700,13 +704,14 @@ align-items: center;
 }
 .social__offer{
   grid-column:2/-1;
+  padding-top: 5px;
 }
 .social__title{
   font-size:36px;
   line-height: 36px;
 }
 .social__text{
-  margin-top:16px;
+  margin-top:10px;
 }
 
 /* CONNECTION FORM */
