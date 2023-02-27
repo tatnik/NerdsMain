@@ -301,43 +301,27 @@
 
   <!-- Modal form-->
   <section class="connection modal">
+
     <div class="connection-header">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="title connection__title">Напишите нам</p>
-      <button class="button close-button" type="button">
-        <span class="visually-hidden">Закрыть</span>
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.3299 10.5005L20.7072 3.12321C21.0963
-                                    2.7317
-                                    21.0963 2.09952 20.7072 1.70801L19.292
-                                    0.291799C18.9005 -0.0972665 18.2683 -0.0972665
-                                    17.8768 0.291799L10.4995 7.67009L3.12221
-                                    0.2928C2.7307 -0.0962657 2.09852 -0.0962657
-                                    1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952
-                                    -0.0972665 2.7317 0.291799 3.12321L7.66909
-                                    10.5005L0.291799 17.8778C-0.0972665 18.2693
-                                    -0.0972665 18.9015 0.291799 19.293L1.70801
-                                    20.7082C2.09952 21.0973 2.7317 21.0973 3.12321
-                                    20.7082L10.5005 13.3309L17.8778 20.7082C18.2693
-                                    21.0973 18.9015 21.0973 19.293 20.7082L20.7082
-                                    19.293C21.0973 18.9015 21.0973 18.2693 20.7082
-                                    17.8778L13.3299 10.5005Z" />
-        </svg>
-      </button>
-
-
+      <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
+
     <form class="connection__form" action="https://echo.htmlacademy.ru" method="post">
 
-      <label class="label l1" for="f1">Ваше имя:</label>
-      <input class="input f1" name="name" id="f1" placeholder="Имя Фамилия" />
-
-      <label class="label l2" for="f2">Ваш email:</label>
-      <input class="input f2" name="email" id="f2" type="email" placeholder="email@example.ru" />
-
-      <label class="label l3" for="f1">Текст письма:</label>
-      <textarea class="input input-multyline f3" name="text" id="f3" placeholder="В произвольной форме"></textarea>
-
+      <label>
+        <span class="label">Ваше имя:</span>
+        <input class="input" name="name" id="f1" placeholder="Имя Фамилия" />
+      </label>
+      <label>
+        <span class="label">Ваш email:</span>
+        <input class="input" name="email" id="f2" type="email" placeholder="email@example.ru" />
+      </label>
+      <label>
+        <span class="label">Текст письма:</span>
+        <textarea class="input input-multyline" name="text" id="f3" placeholder="В произвольной форме"></textarea>
+      </label>
       <button class="button connection__button button--theme" type="submit">Отправить</button>
     </form>
 

@@ -751,6 +751,7 @@ height: 180px;
   padding: 65px 100px 85px 100px;
   color: var(--basic-dark);
   position:relative;
+  box-sizing: border-box;
 }
 
 .connection-header{
@@ -763,54 +764,36 @@ height: 180px;
   line-height: 45px;
   margin-top: 0;
   margin-bottom:0;
-
 }
 
 .connection__form{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25px 50px 35px 25px 120px 45px 50px;
-  column-gap: 40px;
-  grid-template-areas:
-  "l1 l2"
-  "f1 f2"
-  "e1 e1"
-  "l3 l3"
-  "f3 f3"
-  "e2 e2"
-  "b b"  ;
-  margin-top:35px;
-}
-.l1{
-  grid-area: l1;
-}
-.l2{
-  grid-area: l2;
-}
-.l3{
-  grid-area: l3;
-}
-.f1{
-  grid-area: f1;
-}
-.f2{
-  grid-area: f2;
-}
-.f3{
-  grid-area: f3;
+  display:flex;
+  flex-wrap:wrap;
+  padding-top:35px;
+  row-gap:35px;
+  justify-content:space-between;
 }
 
 .label {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  display:block;
 }
 
 .input {
   border: 2px solid var(--basic-light-blue);
-  box-sizing: border-box;
   border-radius: 3px;
+  width: 350px;
+  height: 50px;
+  margin-top: 10px;
 }
+
+.input-multyline{
+  width: 750px;
+  height: 120px;
+}
+
 .input:hover {
   border-color: var(--basic-light-gray);
 }
@@ -830,34 +813,36 @@ height: 180px;
 }
 
 .connection__button {
-  grid-area: b;
-  width: 259px;
+  width: 260px;
+  margin-top: 15px;
 }
 
-.close-button {
+.close-button{
+  border: none;
   width: 20px;
   height: 20px;
-  background-color: transparent;
-  opacity: 0.3;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: -10px;
-  display: inline-block;
-  line-height:0;
-  padding:0;
+  padding: 0;
+  background: transparent;
 }
 
+.close-button::before {
+  content:"";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/close-cross.svg");
+  opacity: 0.3;
+  display: block;
+}
 
-.close-button:hover {
+.close-button:hover.close-button::before {
   opacity: 1;
 }
 
-.close-button:active,
-.close-button:focus {
+.close-button:active.close-button::before,
+.close-button:focus.close-button::before {
   opacity: 0.1;
-}
-
-.close-button svg {
-  fill: var(--special-light);
 }
 
 
