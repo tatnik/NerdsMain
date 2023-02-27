@@ -697,11 +697,40 @@ height: 180px;
   background-color: var( --basic-light-gray);
   padding-top: 0;
   padding-bottom: 0;
+  position:relative;
 }
 
-.social__button:active .social__icon path{
-  fill-opacity: 0.3;
+.social__button::before{
+  content:"";
+  position:absolute;
+  top: 50%;
+  transform:translate(-50%,-50%);
 }
+
+.social__icon--1.social__button::before{
+  background-image: url("../img/icons/vk-icon.svg");
+  width: 27px;
+  height: 15px;
+}
+
+.social__icon--2.social__button::before{
+  background-image: url("../img/icons/fb-icon.svg");
+  width: 12px;
+  height: 22px;
+}
+
+.social__icon--3.social__button::before{
+  background-image: url("../img/icons/insta-icon.svg");
+  width: 21px;
+  height: 22px;
+}
+
+.social__button:active.social__button::before{
+  opacity: 0.3;
+}
+
+/* Social offer */
+
 .social__offer{
   grid-column:2/-1;
   padding-top: 5px;
@@ -712,8 +741,6 @@ height: 180px;
   display:block;
   margin-bottom: 10px;
 }
-.social__text{
- }
 
 /* CONNECTION FORM */
 
