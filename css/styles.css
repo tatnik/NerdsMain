@@ -709,10 +709,11 @@ height: 180px;
 .social__title{
   font-size:36px;
   line-height: 36px;
+  display:block;
+  margin-bottom: 10px;
 }
 .social__text{
-  margin-top:10px;
-}
+ }
 
 /* CONNECTION FORM */
 
