@@ -744,14 +744,21 @@ height: 180px;
 
 /* CONNECTION FORM */
 
-.connection {
+.connection-modal{
+  position: fixed;
+  top: auto;
+  right: 0;
+  bottom: 180px;
+  left: 0;
+  margin: auto;
   display: block;
   width: 960px;
   box-shadow: 0px 20px 40px var(--shadow-modal);
   padding: 65px 100px 85px 100px;
   color: var(--basic-dark);
-  position:relative;
+  background-color: var(--basic-white);
   box-sizing: border-box;
+  z-index:3;
 }
 
 .connection-header{
@@ -829,19 +836,19 @@ height: 180px;
 
 .close-button::before {
   content:"";
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icons/close-cross.svg");
+  width: 21px;
+  height: 21px;
+  background: url("../img/icons/close-cross.svg") 0 0 no-repeat;
   opacity: 0.3;
   display: block;
 }
 
-.close-button:hover.close-button::before {
+.close-button:hover.close-button::before,
+.close-button:focus.close-button::before  {
   opacity: 1;
 }
 
-.close-button:active.close-button::before,
-.close-button:focus.close-button::before {
+.close-button:active.close-button::before {
   opacity: 0.1;
 }
 
@@ -860,6 +867,7 @@ height: 180px;
   column-gap: 140px;
   margin-top: 55px;
 }
+
 /* Filters */
 .filter__title, .sort__title{
   font-weight: 700;
