@@ -151,40 +151,40 @@
       <h2 class="visually-hidden">Список шаблонов</h2>
 
       <!-- Sort-->
-      <div class="sort">
-        <span class="title sort__title">Сортировать</span>
-        <!-- Sort-type -->
-        <form class="sort__form">
-          <fieldset class="fields__sort">
-            <legend class="visually-hidden">Тип сортировки</legend>
-            <input class="button sort__input visually-hidden" type="radio" name="sort" value="price" id="sort-price"
-              checked>
-            <label class="sort__label" for="sort-price">По цене</label>
-            <input class="button sort__input visually-hidden" type="radio" name="sort" value="type" id="sort-type">
-            <label class="sort__label" for="sort-type">По типу</label>
-            <input class="button sort__input visually-hidden" type="radio" name="sort" value="name" id="sort-name">
-            <label class="sort__label" for="sort-name">По названию</label>
-          </fieldset>
 
-          <!-- Sort-order -->
-          <fieldset class="fields__order">
-            <legend class="visually-hidden">Порядок сортировки</legend>
-            <input class="button order__input visually-hidden" type="radio" name="order" value="asc" id="order-asc"
-              checked>
-            <label class="order__label" for="order-asc"><span class="visually-hidden">По возрастанию</span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" />
-              </svg>
-            </label>
-            <input class="button order__input visually-hidden" type="radio" name="order" value="desc" id="order-desc">
-            <label class="order__label" for="order-desc"><span class="visually-hidden">По убыванию</span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" />
-              </svg>
-            </label>
-          </fieldset>
-        </form>
-      </div>
+      <!-- Sort-type -->
+      <form class="sort__form">
+        <span class="title sort__title">Сортировать</span>
+        <fieldset class="fields__sort">
+          <legend class="visually-hidden">Тип сортировки</legend>
+          <input class="button sort__input visually-hidden" type="radio" name="sort" value="price" id="sort-price"
+            checked>
+          <label class="sort__label" for="sort-price">По цене</label>
+          <input class="button sort__input visually-hidden" type="radio" name="sort" value="type" id="sort-type">
+          <label class="sort__label" for="sort-type">По типу</label>
+          <input class="button sort__input visually-hidden" type="radio" name="sort" value="name" id="sort-name">
+          <label class="sort__label" for="sort-name">По названию</label>
+        </fieldset>
+
+        <!-- Sort-order -->
+        <fieldset class="fields__order">
+          <legend class="visually-hidden">Порядок сортировки</legend>
+          <input class="button order__input visually-hidden" type="radio" name="order" value="asc" id="order-asc"
+            checked>
+          <label class="order__label" for="order-asc"><span class="visually-hidden">По возрастанию</span>
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" />
+            </svg>
+          </label>
+          <input class="button order__input visually-hidden" type="radio" name="order" value="desc" id="order-desc">
+          <label class="order__label" for="order-desc"><span class="visually-hidden">По убыванию</span>
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" />
+            </svg>
+          </label>
+        </fieldset>
+      </form>
+
 
 
       <!-- Products-list -->
@@ -204,8 +204,8 @@
             <a class="link" href="item.html">
               <h3 class="text__caption product__caption">Sedona</h3>
             </a>
-            <p class="text product_text">информационный сайт <br>для туристов</p>
-            <button class="button button--theme product_button" type="button">9900 ₽</button>
+            <p class="text product__text">информационный сайт <br>для туристов</p>
+            <button class="button button--theme product__button" type="button">9900 ₽</button>
           </div>
         </li>
 
@@ -223,8 +223,8 @@
             <a class="link" href="item.html">
               <h3 class="text__caption product__caption">Pink App</h3>
             </a>
-            <p class="text product_text">Продуктовый лендинг <br>приложения для iOS и Android</p>
-            <button class="button button--theme product_button" type="button">9900 ₽</button>
+            <p class="text product__text">Продуктовый лендинг <br>приложения для iOS и Android</p>
+            <button class="button button--theme product__button" type="button">9900 ₽</button>
           </div>
         </li>
 
@@ -242,8 +242,8 @@
             <a class="link" href="item.html">
               <h3 class="text__caption product__caption">Barbershop</h3>
             </a>
-            <p class="text product_text">Сайт салона красоты.<br>Для мужчин, да.</p>
-            <button class="button button--theme product_button" type="button">9900 ₽</button>
+            <p class="text product__text">Сайт салона красоты.<br>Для мужчин, да.</p>
+            <button class="button button--theme product__button" type="button">9900 ₽</button>
           </div>
         </li>
 
@@ -261,8 +261,8 @@
             <a class="link" href="item.html">
               <h3 class="text__caption product__caption">MISHKA</h3>
             </a>
-            <p class="text product_text">Интернет-магазин <br>вязаных игрушек</p>
-            <button class="button button--theme product_button" type="button">9900 ₽</button>
+            <p class="text product__text">Интернет-магазин <br>вязаных игрушек</p>
+            <button class="button button--theme product__button" type="button">9900 ₽</button>
           </div>
         </li>
 
@@ -280,8 +280,8 @@
             <a class="link" href="item.html">
               <h3 class="text__caption product__caption">A Plus</h3>
             </a>
-            <p class="text product_text">Лендинг курсов <br>повышения квалификации</p>
-            <button class="button button--theme product_button" type="button">9900 ₽</button>
+            <p class="text product__text">Лендинг курсов <br>повышения квалификации</p>
+            <button class="button button--theme product__button" type="button">9900 ₽</button>
           </div>
         </li>
 
@@ -299,8 +299,8 @@
             <a class="link" href="item.html">
               <h3 class="text__caption product__caption">КВАСТ</h3>
             </a>
-            <p class="text product_text">Промо-сайт производителя <br>крафтового кваса</p>
-            <button class="button button--theme product_button" type="button">9900 ₽</button>
+            <p class="text product__text">Промо-сайт производителя <br>крафтового кваса</p>
+            <button class="button button--theme product__button" type="button">9900 ₽</button>
           </div>
         </li>
 
