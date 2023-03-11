@@ -444,10 +444,11 @@ html{
 }
 .controls{
   display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-  width: 88px;
+  flex-flow: row wrap;
+  gap: 15px;
+  max-width: 560px;
 }
+
 .button-control{
   width:18px;
   height:18px;
@@ -469,6 +470,7 @@ html{
 .services__list {
   display:grid;
   column-gap: 40px;
+  row-gap: 40px;
   grid-template-columns: repeat(3,1fr);
   padding: 75px 0;
   border-bottom: 2px solid var(--basic-light);
@@ -584,7 +586,8 @@ html{
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: 1fr;
-grid-gap: 40px;
+column-gap: 40px;
+row-gap: 2px;
 justify-content: center;
 align-items: center;
 min-height: 180px;
@@ -605,12 +608,25 @@ min-height: 180px;
   transform: translateY(-50%);
 }
 
-.clients__item:last-child::after{
+.clients__item:last-child::after,
+.clients__item:nth-child(4)::after{
   display: none;
 }
 
+.clients__item:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 2px;
+  background-color: var( --basic-light );
+  left: -20px;
+  top: -2px;
+}
+
+
 .clients__img{
-  width: 100%;
+  max-width: 260px;
+  max-height: 180px;
 }
 
 .clients__link{
