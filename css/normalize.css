@@ -349,7 +349,7 @@ template {
 }
 
 
-ul, figure, dl, dd, dt{
+p, h1, h2, h3, ul, figure, dl, dd, dt{
   margin: 0;
   padding: 0;
 }
@@ -369,4 +369,8 @@ input[type="number"] {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
 	display: none;
+}
+
+address{
+  font-style: normal;
 }
