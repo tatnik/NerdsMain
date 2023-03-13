@@ -58,6 +58,7 @@
 
   --color-map: #EDE4C6;
 
+  --color-focus: #262141;
 
   --shadow: rgba(0, 1, 1, 0.1);
   --shadow-product: rgba(0, 0, 0, 0.25);
@@ -184,6 +185,15 @@ html{
   padding: 0;
 }
 
+/* FOCUS */
+
+input:focus + label,
+button:focus,
+input:focus
+a:focus{
+    box-shadow: 0 0 1px 2px var( --color-focus);
+}
+
 /* BUTTONS */
 
 .button {
@@ -272,7 +282,8 @@ html{
   background: url(/img/icons/radio-dark-checked.svg) 0 0 no-repeat;
 }
 
-.radio__input:hover + .radio__label::before{
+.radio__input:hover + .radio__label::before,
+.radio__input:focus + .radio__label::before{
   opacity: 1;
 }
 .radio__input:disabled + .radio__label::before,
@@ -301,7 +312,8 @@ html{
 .check__input:checked + .check__label::before {
   background: url(/img/icons/checkbox-dark.svg) 0 0 no-repeat;
 }
-.check__input:hover  + .check__label::before {
+.check__input:hover  + .check__label::before,
+.check__input:focus  + .check__label::before {
   opacity: 1;
 }
 .check__input:disabled + .check__label::before,
@@ -775,6 +787,7 @@ min-height: 180px;
   display:none;
 }
 
+
 .connection-header{
   display: flex;
   align-items: center;
@@ -949,6 +962,7 @@ min-height: 180px;
   margin-top:15px;
   display:flex;
 }
+
 .options__item label{
   max-width: 220px;
 }
@@ -997,6 +1011,10 @@ min-height: 180px;
 
 .sort__input:hover + .sort__label,
 .order__input:hover + .order__label{
+  opacity: 0.6;
+}
+.sort__input:focus + .sort__label,
+.order__input:focus + .order__label{
   opacity: 0.6;
 }
 

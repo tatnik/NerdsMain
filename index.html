@@ -19,9 +19,9 @@
       <nav class="nav header__nav w-medium">
         <!--Logo-->
         <div class="logo header__logo">
-          <a class="link logo__link" href="">
-            <img class="logo__img" src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нёрдс" />
-          </a>
+
+          <img class="logo__img" src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нёрдс" />
+
         </div>
         <!-- Site-menu -->
         <ul class="site-nav header__site-nav list">
@@ -29,13 +29,13 @@
             <a class="link nav--current" href="#">Студия</a>
           </li>
           <li class="site-nav__item">
-            <a class="link" href="#">Клиенты</a>
+            <a class="link" href="#section-clients">Клиенты</a>
           </li>
           <li class="site-nav__item">
             <a class="link" href="catalog.html">Магазин</a>
           </li>
           <li class="site-nav__item">
-            <a class="link" href="#">Контакты</a>
+            <a class="link" href="#section-contacts">Контакты</a>
           </li>
         </ul>
         <!-- User-menu -->
@@ -57,10 +57,9 @@
 
     <!-- Galery -->
 
-    <section class="galery">
+    <section class="galery" aria-labelledby="galery">
+      <h2 class="visually-hidden" id="galery">Как мы работаем. Слайды</h2>
       <div class="container">
-        <h2 class="visually-hidden">Как мы работаем</h2>
-
         <ul class="list galery__list">
 
           <!-- Slide-1 -->
@@ -110,8 +109,8 @@
         </ul>
 
         <!-- Galery controls -->
-        <div class="galery__controls">
-          <h2 class="visually-hidden">Кнопки выбора слайда</h2>
+        <div class="galery__controls" aria-labelledby="galery-controls">
+          <h2 class="visually-hidden" id="galery-controls">Кнопки выбора слайда</h2>
           <div class="controls">
             <button type="button" class="button-control current" id="control-1" aria-label="Первый слайд"></button>
             <button type="button" class="button-control" id="control-2" aria-label="Второй слайд"></button>
@@ -122,9 +121,9 @@
     </section>
 
     <!-- Services -->
-    <section class="services container">
+    <section class="services container" aria-labelledby="services">
 
-      <h2 class="visually-hidden">Услуги</h2>
+      <h2 class="visually-hidden" id="services">Услуги</h2>
 
       <!-- List of services -->
       <ul class="list services__list">
@@ -164,8 +163,8 @@
     </section>
 
     <!-- About us -->
-    <section class="about container">
-      <h2 class="visually-hidden">О компании</h2>
+    <section class="about container" aria-labelledby="about" id="section-about">
+      <h2 class="visually-hidden" id="about">О компании</h2>
 
       <div class="about__description">
         <p class="s-big w-medium lh-min">
@@ -210,8 +209,8 @@
     </section>
 
     <!-- Clients -->
-    <section class="clients container">
-      <h2 class="visually-hidden">Наши клиенты</h2>
+    <section class="clients container" aria-labelledby="clients" id="section-clients">
+      <h2 class="visually-hidden" id="clients">Наши клиенты</h2>
       <ul class="list clients__list">
         <!-- Лого 1-->
         <li class="clients__item">
@@ -221,17 +220,17 @@
         <!-- Лого 2-->
         <li class="clients__item">
           <a class="link clients__link" href=""><img class="clients__img" src="img/all/logo-2-min.png" width="260"
-              height="140" alt="Логотип клиента 2" /></a>
+              height="140" alt="Логотип Барбершопа Бородински" /></a>
         </li>
         <!-- Лого 3-->
         <li class="clients__item">
           <a class="link clients__link" href=""><img class="clients__img" src="img/all/logo-3-min.png" width="260"
-              height="140" alt="Логотип клиента 3" /></a>
+              height="140" alt="Логотип компании Pink" /></a>
         </li>
         <!-- Лого 4-->
         <li class="clients__item">
           <a class="link clients__link" href=""><img class="clients__img" src="img/all/logo-4-min.png" width="260"
-              height="140" alt="Логотип клиента 4" /></a>
+              height="140" alt="Логотип компании Mishka" /></a>
         </li>
       </ul>
     </section>
@@ -241,8 +240,8 @@
   <!-- Footer -->
   <footer class="footer">
     <!-- Contacts -->
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+    <section class="contacts" aria-labelledby="contacts" id="section-contacts">
+      <h2 class="visually-hidden" id="contacts">Контакты</h2>
       <div class="contacts__map container">
         <!-- here should be a map-->
         <div class="contacts__card">
@@ -263,8 +262,8 @@
     </section>
 
     <!-- Social buttons-->
-    <section class="social container">
-      <h2 class="visually-hidden">Соцсети</h2>
+    <section class="social container" aria-labelledby="social" id="section-social" tabindex="-1">
+      <h2 class="visually-hidden" id="social">Соцсети</h2>
       <ul class="list social__list">
 
         <!-- VK -->
@@ -302,10 +301,9 @@
   </footer>
 
   <!-- Modal form-->
-  <section class="modal connection-modal">
-
+  <section class="modal connection-modal" id="connection-modal" aria-labelledby="form-title" role="dialog">
     <div class="connection-header">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <h2 class="visually-hidden" id="form-title">Форма обратной связи</h2>
       <p class="connection__title s-big w-bold lh-small">Напишите нам</p>
       <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
