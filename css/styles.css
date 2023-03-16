@@ -204,6 +204,7 @@ a:focus{
   color: var(--basic-white);
   display:inline-block;
   min-height: 20px;
+  cursor: pointer
 }
 .button:active {
   box-shadow: inset 0px 3px 0px var(--shadow);
@@ -434,10 +435,16 @@ a:focus{
   display:block;
   padding: 60px 0;
   min-height: 310px;
+  animation: slider 1s;
 }
 
  .galery__text{
   margin-top: 10px;
+ }
+
+ .galery__text span{
+  display:block;
+  padding-bottom: 25px;
  }
 
 .galery__button {
@@ -1158,5 +1165,16 @@ opacity: 1;
   60%,
   80% {
     transform: translateX(10px);
+  }
+}
+
+
+@keyframes slider {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

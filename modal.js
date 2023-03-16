@@ -6,6 +6,32 @@ const field_name = modal.querySelector('#name');
 const field_email = modal.querySelector('#email');
 const field_text = modal.querySelector('#text');
 
+const controls = document.querySelectorAll('.button-control');
+const slides = document.querySelectorAll('.galery__item');
+let active_slide = slides[0];
+let active_control = controls[0];
+
+/* Slider */
+function makeListener(slide, control) {
+  return function () {
+    console.log(active_slide);
+    console.log(slide);
+
+    active_slide.classList.remove('galery__item--current');
+    slide.classList.add('galery__item--current');
+    active_slide = slide;
+
+    active_control.classList.remove('current');
+    control.classList.add('current');
+    active_control = control;
+
+  }
+}
+for (i = 0; i < controls.length; i++){
+  controls[i].addEventListener('click', makeListener(slides[i], controls[i]));
+}
+
+
 /* localStorage */
 let isStorageSupport = true;
 try {
@@ -51,7 +77,7 @@ document.addEventListener('keydown', function (evt) {
 /* Submit and Saving field's values */
 document.addEventListener('submit', function (evt) {
   if (field_name.value && field_email.value && field_text.value) {
-    console.log("*");
+
     modal.classList.remove('modal--show');
     modal.classList.remove('modal--error');
     if (isStorageSupport) {
@@ -60,7 +86,7 @@ document.addEventListener('submit', function (evt) {
     }
   }
   else {
-    console.log("*********");
+
     evt.preventDefault();
     modal.classList.remove("modal-error");
     modal.offsetWidth = modal.offsetWidth;
