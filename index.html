@@ -253,9 +253,9 @@
             </p>
           </address>
 
-          <button class="button button--theme contacts__button" type="button">
+          <a class="button button--theme contacts__button" href="blank.html" type="button">
             <span class="button__text">Напишите нам</span>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -308,24 +308,25 @@
       <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
 
-    <form class="connection__form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="connection__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
 
       <label>
         <span class="label w-bold">Ваше имя:</span>
-        <input class="input" name="name" id="f1" placeholder="Имя Фамилия" />
+        <input class="input" name="name" id="name" placeholder="Имя Фамилия" required />
       </label>
       <label>
         <span class="label w-bold">Ваш email:</span>
-        <input class="input" name="email" id="f2" type="email" placeholder="email@example.ru" />
+        <input class="input" name="email" id="email" type="email" placeholder="email@example.ru" required />
       </label>
       <label>
         <span class="label w-bold">Текст письма:</span>
-        <textarea class="input input-multyline" name="text" id="f3" placeholder="В произвольной форме"></textarea>
+        <textarea class="input input-multyline" name="text" id="text" placeholder="В произвольной форме"></textarea>
       </label>
-      <button class="button connection__button button--theme" type="submit">Отправить</button>
+      <button class="button connection__button button--theme t-upper" type="submit">Отправить</button>
     </form>
 
   </section>
+  <script src="modal.js"></script>
 </body>
 
 </html>
