@@ -14,16 +14,24 @@ let active_control = controls[0];
 /* Slider */
 function makeListener(slide, control) {
   return function () {
-    console.log(active_slide);
-    console.log(slide);
 
     active_slide.classList.remove('galery__item--current');
     slide.classList.add('galery__item--current');
+
+    let txt = slide.querySelector('.item-text');
+    txt.classList.add('item-text--show');
+
+    txt = active_slide.querySelector('.item-text');
+    txt.classList.remove('item-text--show');
+
     active_slide = slide;
 
     active_control.classList.remove('current');
     control.classList.add('current');
     active_control = control;
+
+
+
 
   }
 }
