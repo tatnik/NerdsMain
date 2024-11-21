@@ -1,4 +1,5 @@
-/* constants */
+/* Constants */
+
 const contacts_button = document.querySelector('.contacts__button');
 const modal = document.querySelector('.connection-modal');
 const close_button = document.querySelector('.close-button');
@@ -12,6 +13,7 @@ let active_slide = slides[0];
 let active_control = controls[0];
 
 /* Slider */
+
 function makeListener(slide, control) {
   return function () {
 
@@ -30,17 +32,17 @@ function makeListener(slide, control) {
     control.classList.add('current');
     active_control = control;
 
-
-
-
   }
 }
+
+
 for (i = 0; i < controls.length; i++){
   controls[i].addEventListener('click', makeListener(slides[i], controls[i]));
 }
 
 
-/* localStorage */
+/* LocalStorage */
+
 let isStorageSupport = true;
 try {
   localStorage.getItem("name");
@@ -48,8 +50,10 @@ try {
   isStorageSupport = false;
 }
 
+/* MODAL-FORM */
 
 /* Show modal-form */
+
 contacts_button.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal--show');
@@ -68,12 +72,14 @@ contacts_button.addEventListener('click', function (evt) {
 
 
 /* Close modal-form by button*/
+
 close_button.addEventListener('click', function () {
   modal.classList.remove('modal--show');
   modal.classList.remove('modal--error');
 });
 
 /* Close modal-form  by ESC*/
+
 document.addEventListener('keydown', function (evt) {
   if (evt.code == 27) {
     modal.classList.remove('modal--show');
@@ -83,6 +89,7 @@ document.addEventListener('keydown', function (evt) {
 
 
 /* Submit and Saving field's values */
+
 document.addEventListener('submit', function (evt) {
   if (field_name.value && field_email.value && field_text.value) {
 
